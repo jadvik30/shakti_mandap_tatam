@@ -1,5 +1,6 @@
 var slide = 1;
 showSlide(slide)
+showPanel();
 
 function showSlide(n){
     var allSlides = document.getElementsByClassName("mySlide");
@@ -13,26 +14,35 @@ function showSlide(n){
 
 function plusSlides(n){
     showSlide(slide += n);
+    showPanel();
 }
 
 function currentSlide(n){
     showSlide(slide = n);
+    showPanel();
 }
 
-document.getElementById("i1").addEventListener("touchstart" , touchStarted , false);
-document.getElementById("i1").addEventListener("touchmove" , moveTouch , false);
-
-var initialX = null;
-
-function touchStarted(e){
-    initialX = e.touches[0].clientX;
+function showPanel(){
+    var str = "";
+    str += slide;
+    str += " / ";
+    str += 3;
+    document.getElementById("pan").innerText = str ;
 }
+// document.getElementById("i1").addEventListener("touchstart" , touchStarted , false);
+// document.getElementById("i1").addEventListener("touchmove" , moveTouch , false);
 
-function moveTouch(e){
-    if(initialX == null) return;
-    var finalX = e.touches[0].clientX;
-    var diffX = finalX - initialX;
-    if(diffX > 0) plusSlides(-1);
-    else plusSlides(1);
-    initialX = null;
-}
+// var initialX = null;
+
+// function touchStarted(e){
+//     initialX = e.touches[0].clientX;
+// }
+
+// function moveTouch(e){
+//     if(initialX == null) return;
+//     var finalX = e.touches[0].clientX;
+//     var diffX = finalX - initialX;
+//     if(diffX > 0) plusSlides(-1);
+//     else plusSlides(1);
+//     initialX = null;
+// }
