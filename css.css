@@ -1,0 +1,144 @@
+body{
+    font-family: 'Hind Vadodara', sans-serif;
+    text-align: center;
+    background-color: #FFADF0;
+    margin: 0;
+}
+
+.main{
+    background-image: url('entry-gate-1.png');
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding-bottom: 20%;
+    padding-top: 10%;
+}
+
+.heading{
+    border: black solid;
+    margin-top: 0;
+    margin: auto;
+    padding: 0;
+    font-size: 2rem;
+    background-color: #FBCAFF;
+    color: #FC28FB;
+    text-decoration:dotted;
+    text-shadow: 0 0 3px black, 0 0 2px black;
+    width: 90%;
+}
+
+.title{
+    padding: 0;
+    margin: 0;
+}
+
+.name{
+    margin-left: 3px;
+    background-color: #E7ED9B;
+    text-align: left;
+    padding-left: 5px;
+    border-left: #F1D00A 15px solid;
+    width: 70%;
+}
+
+.mobile-no{
+    position: relative;
+    left: 41%;
+    background-color: #E7ED9B;
+    text-align: right;
+    padding-left: 5px;
+    border-right: #F1D00A 15px solid;
+    width: 50%;
+}
+
+.item{
+    margin: 0;
+    background-color: #F94892;
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+
+.subTitle{
+    margin-left: 3px;
+    background-color: #E7ED9B;
+    text-align: left;
+    padding-left: 5px;
+    border-left: #F1D00A 15px solid;
+    width: 40%;
+}
+
+.slide{
+    margin: auto;
+}
+
+.mySlide{
+    display: none;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    right: 12px;
+    /* transition: 0.6s ease; */
+    border-radius: 0 3px 3px 0;
+    /* user-select: none; */
+}
+
+.prev{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    left: 12px;
+    z-index: 1;
+    /* transition: 0.6s ease; */
+    border-radius: 0 3px 3px 0;
+    /* user-select: none; */
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.numbertext {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.subMain{
+    height: 200px;
+    background-color: #E7ED9B;
+}
+
+.frm{
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border-top: #FC28FB 3px dashed;
+    width: 10%;
+    color: #FC28FB;
+}
